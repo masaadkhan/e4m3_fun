@@ -141,15 +141,3 @@ def int_to_e4m3_val(fp_num):
   print(f"{"-1" if (sign_str == "1") else "1"} * {mant} * 2^({exp_val})")
 
   return (-1 if (sign_str == "1") else 1) * mant * (2 ** exp_val)
-
-
-print(f"E4M3 min val: {e4m3_min_val()}\n")
-print(f"E4M3 max val: {e4m3_max_val()}\n")
-print(f"E4M3 max subnormal val: {e4m3_max_subnormal_val()}\n")
-print(f"E4M3 min subnormal val: {e4m3_min_subnormal_val()}\n")
-
-print(f"int ({254}) to e4m3 ({int_to_e4m3_val(254)})")
-
-# fp_a = int(input("Enter A: "))
-# fp_b = int(input("Enter B: "))
-
