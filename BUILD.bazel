@@ -1,0 +1,8 @@
+cc_binary(
+    name = "e4m3",
+    srcs = ["e4m3.cc"],
+    copts = [
+        "-Imac_cc_headers",
+    ],
+    visibility = ["//visibility:public"],
+)
